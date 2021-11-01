@@ -4,6 +4,7 @@ title: "lptr's blog"
 theme: "PaperMod"
 googleAnalytics: UA-25254661-1
 disqusShortname: lptrs-blog
+
 menu:
   main:
     - name: About
@@ -12,3 +13,9 @@ menu:
     - name: Archive
       url: archives
       weight: 5
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
