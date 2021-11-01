@@ -19,3 +19,15 @@ outputs:
     - HTML
     - RSS
     - JSON
+
+params:
+  homeInfoParams:
+    Title: "Welcome"
+    Content: >
+      Welcome to my tech blog on the internet.
+
+  socialIcons:
+    - name: GitHub
+      url: "https://github.com/lptr"
+    - name: RSS
+      url: "index.xml"
