@@ -3,3 +3,6 @@ languageCode: "en-us"
 title: "lptr's blog"
 theme: "PaperMod"
 googleAnalytics: UA-25254661-1
+disqusShortname: lptrs-blog
+params:
+  comments: true
