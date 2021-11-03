@@ -18,6 +18,8 @@ After consulting with a colleague at work who had prior experience, I got myself
 
 You see, back then I was as far from considering myself a maker, or even a tinkerer, as you could possibly imagine. To demonstrate: I recently got a grill for the garden; the one with the little wheels to move it around. The wheels were secured to the axle with a _cotter pin,_ and I messed up one of them during assembly. I later spent _hours_ in home improvement stores online and offline to find the exact same pin, to no avail. I was convinced that the grill would only function properly with the stock pin. Of course, today I know that any piece of wire would have done the trick, but that realization came after a lot of learning. (That's not to say I ever actually fixed the wheel, of course.)
 
+{{< figure src="prusa-mk3s.jpg" title="The Prusa MK3S that started it all" align="center" >}}
+
 So when the box with the printer finally arrived last April, I was extremely excited, but also terrified. Here I was, a software developer by trade, who is also proficient at putting together Lego (even Technic!), but I couldn't imagine myself successfully assembling _grown up stuff_ in the _real world._ But the Prusa manuals were great, and with a little help from my wife I finished building the printer by 4 AM, and had the first print (a [Benchy](https://www.prusaprinters.org/prints/3161-3d-benchy)) ready by 7 AM. I was extremely proud and surprised. And even though the print came out partially broken due to issues with layer adhesion, it was marvelous.
 
 This was a turning point in my life: I could imagine, for the first time, that my work can have an immediate effect on the physical reality around me. That I can build stuff. And boy was this just the beginning...
@@ -33,6 +35,8 @@ The next piece of the puzzle came as another kit: after printing some parts for 
 The first of these was electronics: I hated the subject in high school and then at university. It took months to muster up the courage, but eventually I connected the pieces, and uploaded my first self-written firmware. During my career I participated in several big releases, but few could have lived up to the excitement I felt at that single blue light blinking for the first time!
 
 {{< figure src="esp8266.jpg" title="The first ESP8266" align="center" >}}
+
+Then I bought a soldering iron, and things started to move fast. With a lot of trial and error, and a ton of help from another friend, I slowly started getting a grip on this fascinating world.
 
 The next major step was to learn C++: a language I haven't used since university 20 years ago. As someone who jumped on the managed languages bandwagon in 2000 when .NET wasn't even a beta, and has been working mostly with Java ever since, C++ represented danger and chaos. As one of the lucky coincidences, in [my work I also had to do some C++](https://docs.gradle.org/6.7.1/release-notes.html#file-system-watching-is-ready-for-production-use). It was a pleasant surprise to find that C++11 changed the game fundamentally, and for the better. But still, it was an entirely new world with its strange mechanics (what's a move constructor, again?) and lack of safety rails.
 
