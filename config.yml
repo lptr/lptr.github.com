@@ -31,3 +31,5 @@ params:
       url: "https://github.com/lptr"
     - name: RSS
       url: "index.xml"
+
+  showFullTextinRSS: true
