@@ -1,2 +1,85 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Redneck Overengineering</title><link>https://lptr.github.io/</link><description>Recent content on Redneck Overengineering</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Nov 2021 16:18:59 +0100</lastBuildDate><atom:link href="https://lptr.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>A new beginning</title><link>https://lptr.github.io/posts/a-new-beginning/</link><pubDate>Mon, 01 Nov 2021 16:18:59 +0100</pubDate><guid>https://lptr.github.io/posts/a-new-beginning/</guid><description>Looks like every ten years I attempt to write a blog. This time around it seems that I actually have something to say, so let&amp;rsquo;s see what happens. :)
-Flow alert device Above is a flow sensor I am currently building for our family farm. It&amp;rsquo;s the second IoT device to be installed there, and its role will be to warn us whenever the irrigation system develops another leak.</description></item><item><title>About</title><link>https://lptr.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lptr.github.io/about/</guid><description>Hi there. I am Lóránt Pintér from Hungary, and here I&amp;rsquo;m jotting down thoughts on my meandering exploration around topics like embedded technologies, product design, coding etc.</description></item></channel></rss>
+Flow alert device Above is a flow sensor I am currently building for our family farm. It&amp;rsquo;s the second IoT device to be installed there, and its role will be to warn us whenever the irrigation system develops another leak.</description><content:encoded><![CDATA[<p>Looks like every ten years I attempt to write a blog. This time around it seems that I actually have something to say, so let&rsquo;s see what happens. :)</p>
+<figure class="align-center ">
+    <img loading="lazy" src="flow-alert-photo.jpg#center"/> <figcaption>
+            Flow alert device
+        </figcaption>
+</figure>
+
+<p>Above is a flow sensor I am currently building for our family farm. It&rsquo;s the second IoT device to be installed there, and its role will be to warn us whenever the irrigation system develops another leak. The device uses a ton of technologies I haven&rsquo;t even heard of 18 months ago when all of this started. Many things worked out really well since then, and it took help from many people. Below is a recounting of the trip so far, to serve as introduction for the next chapters.</p>
+<h2 id="the-printer">The printer</h2>
+<p>As so many things recently, this all started with Covid. When the virus hit, I wanted to help. I saw an article on the web about people 3D printing &ldquo;ear savers&rdquo; for people doctors wearing masks all day, and even holders for plexiglass shields, when there weren&rsquo;t enough surgical masks around in the beginning. This sounded like a great idea, and I wanted to join.</p>
+<p>After consulting with a colleague at work who had prior experience, I got myself a <a href="https://shop.prusa3d.com/en/3d-printers/180-original-prusa-i3-mk3s-kit.html">Prusa MK3S</a>. And because of this colleague&rsquo;s advice, I did not get the pre-assembled printer, but ordered a kit to be put together by myself. While I never managed to help doctors with my prints, this turned out to be the beginning of a ton of adventure in both technology and self-discovery.</p>
+<p>You see, back then I was as far from considering myself a maker, or even a tinkerer, as you could possibly imagine. To demonstrate: I recently got a grill for the garden; the one with the little wheels to move it around. The wheels were secured to the axle with a <em>cotter pin,</em> and I messed up one of them during assembly. I later spent <em>hours</em> in home improvement stores online and offline to find the exact same pin, to no avail. I was convinced that the grill would only function properly with the stock pin. Of course, today I know that any piece of wire would have done the trick, but that realization came after a lot of learning. (That&rsquo;s not to say I ever actually fixed the wheel, of course.)</p>
+<figure class="align-center ">
+    <img loading="lazy" src="prusa-mk3s.jpg#center"/> <figcaption>
+            The Prusa MK3S that started it all
+        </figcaption>
+</figure>
+
+<p>So when the box with the printer finally arrived last April, I was extremely excited, but also terrified. Here I was, a software developer by trade, who is also proficient at putting together Lego (even Technic!), but I couldn&rsquo;t imagine myself successfully assembling <em>grown up stuff</em> in the <em>real world.</em> But the Prusa manuals were great, and with a little help from my wife I finished building the printer by 4 AM, and had the first print (a <a href="https://www.prusaprinters.org/prints/3161-3d-benchy">Benchy</a>) ready by 7 AM. I was extremely proud and surprised. And even though the print came out partially broken due to issues with layer adhesion, it was marvelous.</p>
+<p>This was a turning point in my life: I could imagine, for the first time, that my work can have an immediate effect on the physical reality around me. That I can build stuff. And boy was this just the beginning&hellip;</p>
+<figure class="align-center ">
+    <img loading="lazy" src="speaker-mount.jpg#center"/> <figcaption>
+            Speaker mount, one of my first functional designs
+        </figcaption>
+</figure>
+
+<p>Both of my parents are mechanical engineers, and I always looked up to them for their ability to design actual physical objects. My father was an early adopter and an avid fan of AutoCad and Inventor, and I always wanted to design my own stuff like he did. While those tools I could never afford for my hobby, AutoDesk allows just the people like me to use some of their most advanced tools for free as part of the <a href="https://www.autodesk.com/products/fusion-360/personal">Fusion 360 personal use package</a>. And there are an amazing variety of <a href="https://www.youtube.com/watch?v=VbSkwvZyU_0">tutorials to get someone started</a>. So I dove in!</p>
+<h2 id="a-light-comes-on">A light comes on</h2>
+<p>The next piece of the puzzle came as another kit: after printing some parts for his scooter, a friend paid me with an ESP8266 MCU, a breadboard, a blue LED and a single resistor. With that he also kicked me way out of my comfort zone of Java development, and put me on a path of learning and facing a number of my fears around technology.</p>
+<p>The first of these was electronics: I hated the subject in high school and then at university. It took months to muster up the courage, but eventually I connected the pieces, and uploaded my first self-written firmware. During my career I participated in several big releases, but few could have lived up to the excitement I felt at that single blue light blinking for the first time!</p>
+<figure class="align-center ">
+    <img loading="lazy" src="esp8266.jpg#center"/> <figcaption>
+            The first ESP8266
+        </figcaption>
+</figure>
+
+<p>Then I bought a soldering iron, and things started to move fast. With a lot of trial and error, and a ton of help from another friend, I slowly started getting a grip on this fascinating world.</p>
+<p>The next major step was to learn C++: a language I haven&rsquo;t used since university 20 years ago. As someone who jumped on the managed languages bandwagon in 2000 when .NET wasn&rsquo;t even a beta, and has been working mostly with Java ever since, C++ represented danger and chaos. As one of the lucky coincidences, in <a href="https://docs.gradle.org/6.7.1/release-notes.html#file-system-watching-is-ready-for-production-use">my work I also had to do some C++</a>. It was a pleasant surprise to find that C++11 changed the game fundamentally, and for the better. But still, it was an entirely new world with its strange mechanics (what&rsquo;s a move constructor, again?) and lack of safety rails.</p>
+<p><a href="https://code.visualstudio.com/">Visual Studio Code</a> was another revelation. Having used Eclipse and then IntelliJ most of my life I kind of accepted that IDEs are huge, unwieldy beasts by necessity. VSCode proved that wrong, and convinced me that there is a better, lightweight approach to software development. <a href="https://platformio.org/">Platform IO</a> made it alost too easy to get started and then become proficient in embedded development.</p>
+<h2 id="lives-on-the-line">Lives on the line</h2>
+<p>The first major project where all of this (and more) came together was my chicken door. We have a small family farm a few kilometers away from our home where we started raising chickens (did I mention my wife is also on a learning spree?), and letting them in and out of the coop every day was a chore we decided to do without. But it had to be really-really safe, as we knew from experience that foxes and ferrets were frequently paying visits to our chicken coop.</p>
+<figure class="align-center ">
+    <img loading="lazy" src="chickens.jpg#center"/> <figcaption>
+            Some of our first chickens, named after Hungarian royalty
+        </figcaption>
+</figure>
+
+<p>If you saw the title of this blog, you know I couldn&rsquo;t just design a <em>simple</em> chicken coop door. It had to be properly overengineered! After several iterations I ended up with using a Bosch aluminum profile for the frame, fishing line and a large aluminum plate for the door itself, an <a href="https://github.com/Xinyuan-LilyGO/LilyGo-T-Call-SIM800">ESP32 board</a> I got from another friend for brains, and several 3D printed parts all designed in Fusion to put the thing together.</p>
+<figure class="align-center ">
+    <img loading="lazy" src="chicken-door-drawing.png#center"/> <figcaption>
+            The brains of the chicken door (MK3) sans wiring
+        </figcaption>
+</figure>
+
+<p>One of the things I learned was that hardware design was just as iterative a process as software development was. I first tried my prototype out inside the house, then outside, and finally in the chicken coop itself. But before it could be installed in its production environment, there was a lot of going back to the drawing board, redesigning the 3D parts, soldering and re-soldering connectors, ordering replacement parts for the electronics I messed up with my clumsy soldering, starting yet another new drawing in Fusion titled &ldquo;MK3&rdquo; etc.</p>
+<h2 id="the-software-backend">The software backend</h2>
+<p>And the software was no easier! For one, there were completely new challenges, like dealing with the limited resources available on the ESP32 platform. Take for example a seemingly trivial thing, like checking if a given time has passed. This code won&rsquo;t work:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">if</span> (millis() <span style="color:#f92672">&gt;</span> previousTimestamp <span style="color:#f92672">+</span> timeoutInMillis) {
+    <span style="color:#75715e">// This will not always do what you think it should do
+</span><span style="color:#75715e"></span>}
+</code></pre></div><p>Or more precisely: it would only work for the first fifty-ish days (or the first 2^32 milliseconds). After that, <code>previousTimestamp + timeoutInMillis</code> can roll over, and the condition will trigger immediately. Imagine debugging that in production!</p>
+<p>The solution? You have to shuffle things around a bit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">if</span> (millis() <span style="color:#f92672">-</span> previousTimestamp <span style="color:#f92672">&gt;</span> timeoutInMillis) {
+    <span style="color:#75715e">// Do your thing that should happen after the timeout
+</span><span style="color:#75715e"></span>}
+</code></pre></div><p>A subtle difference, but the code works correctly now indefinitely! This is a problem you need to deal with on a 64-bit system only if you are working with time spans across hundreds of millennia, even if your timestamps maintain nanosecond precision.</p>
+<p>Much of the rest that I learned during my career was also non-applicable in this new environment, or wasn&rsquo;t as readily available. Take automated testing. On the JVM it is very typical to test the entirety of the codebase. With an application designed to be tested via dependency injection, proper abstractions etc. it is easy to test things, too. Native development, at least the parts I&rsquo;ve interacted with, seems to be on a very different opinion. It is also much harder to pry your code away from the Arduino framework to keep it testable on its own. But eventually I managed to get the core of the logic testes with <a href="https://github.com/google/googletest">GoogleTest</a>. I can&rsquo;t imagine how else I could sleep well, knowing the complexity of the <a href="https://github.com/kivancsikert/chicken-coop-door/blob/7700468dc6b997e306b75f8abc70d9919f7bb3b7/lib/door/DoorLogic.cpp#L42-L126">state machine code</a> that is keeping my chickens safe during the night!</p>
+<p>Mentioning that state machine code reminds me that about half of it has been written by Visual Studio Code&rsquo;s <a href="https://copilot.github.com/">Copilot feature</a>. It is truly astonishing how <em>relevant</em> the suggestions for the AI aer based on so little context. It truly felt like having a second pair of eyes on the code all the time. Meeting copilot was my &ldquo;<a href="https://en.wikipedia.org/wiki/AlphaGo_Zero">AlphaGo Zero</a> moment,&rdquo; where I got the first taste of what AIs could mean in the future, how immediate that effect will be, and how very soon.</p>
+<p>But enough of SkyNet for now, let&rsquo;s go back to chickens!</p>
+<figure class="align-center ">
+    <img loading="lazy" src="chicken-door.jpg#center"/> <figcaption>
+            Successful user testing
+        </figcaption>
+</figure>
+
+<p>This thing is now operational for a few months without any major problems. The final setup uses a local Raspberry Pi that relays MQTT messages back-and-forth to a server in the cloud. (Did I mention I was always afraid to install my own servers? Well, that&rsquo;s of the past now, too.) There are graphs tracking motor position and light levels throughout the year using <a href="https://grafana.com/">Grafana</a> and <a href="https://www.influxdata.com/products/influxdb/">InfluxDB</a>. There&rsquo;s also a dashboard created using <a href="https://nodered.org/">NodeRED</a> that allows us to control the door from afar. And all this is running nice and isolated using <a href="https://docs.docker.com/compose/">Docker Compose</a> (yes, even on the Pi).</p>
+<figure class="align-center ">
+    <img loading="lazy" src="node-red-dashboard.jpg#center" width="50%"/> <figcaption>
+            NodeRED dashboard on phone
+        </figcaption>
+</figure>
+
+<p>So this is where we are today. I went from a non-maker Java developer to learn stuff about CAD, C++, Arduino, 3D printing, electronics, infrastructure as a service and a ton of other stuff. I am not planning to slow down either, and would like to continue exploring things like subtractive manufacturing (I&rsquo;d love to build one of those home CNC mills), solar power, robots, image processing and machine learning just to name a few. Check back if you are interested in these continued adventures! :)</p>
+]]></content:encoded></item><item><title>About</title><link>https://lptr.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://lptr.github.io/about/</guid><description>Hi there. I am Lóránt Pintér from Hungary, and here I&amp;rsquo;m jotting down thoughts on my meandering exploration around topics like embedded technologies, product design, coding etc.</description><content:encoded>&lt;p>Hi there. I am Lóránt Pintér from Hungary, and here I&amp;rsquo;m jotting down thoughts on my meandering exploration around topics like embedded technologies, product design, coding etc.&lt;/p></content:encoded></item></channel></rss>
