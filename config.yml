@@ -29,6 +29,8 @@ params:
   socialIcons:
     - name: GitHub
       url: "https://github.com/lptr"
+    - name: Mastodon
+      url: "https://mas.to/@lptr"
     - name: RSS
       url: "index.xml"
 
