@@ -2,7 +2,7 @@ baseURL: "https://lptr.github.io/"
 languageCode: "en-us"
 title: "Redneck Overengineering"
 theme: "PaperMod"
-googleAnalytics: UA-25254661-1
+googleAnalytics: G-3FC267J0K7
 disqusShortname: redneck-overengineering
 
 menu:
