@@ -29,9 +29,11 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
       - name: Cache restore
         id: cache-restore
         uses: actions/cache/restore@v5
@@ -40,6 +42,7 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
+
       - name: Build the site
         run: |
           hugo \
@@ -47,12 +50,19 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
+
       - name: Cache save
         id: cache-save
         uses: actions/cache/save@v5
         with:
           path: ${{ runner.temp }}/hugo_cache
           key: ${{ steps.cache-restore.outputs.cache-primary-key }}
+
+      # This is necessary to upload artifacts
+      - name: Install GNU Tar
+        run: |
+          apk add tar
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
