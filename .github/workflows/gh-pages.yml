@@ -15,11 +15,15 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: hugomods/hugo:exts
+      image: hugomods/hugo:debian-dart-sass-node-git-non-root
     env:
       TZ: Europe/Budapest
 
