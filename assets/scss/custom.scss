@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  src: url('../fonts/Lora-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  src: url('../fonts/Lora-Italic-VariableFont_wght.ttf');
+}
+
+.navigation-item {
+  text-transform: uppercase;
+}
+
+a {
+  transition: none;
+}
+
+.navigation a:hover {
+  text-decoration: none;
+}

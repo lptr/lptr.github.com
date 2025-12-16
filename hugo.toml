@@ -1,0 +1,42 @@
+baseURL = 'https://lptr.github.io/'
+languageCode = 'en-us'
+title = 'Redneck Overengineering'
+theme = 'hugo-coder'
+
+[params]
+author = 'Lóránt Pintér'
+description = 'Taking farm automation to extreme levels'
+colorScheme = "auto"
+hidecolorschemetoggle = false
+customSCSS = ["scss/custom.scss"]
+commit = "https://github.com/lptr/lptr.github.io/tree/"
+contactEmail = "lorant@pindoro.eu"
+
+# Menu
+[[menu.main]]
+name = "Blog"
+weight = 1
+url = "/blog/"
+
+# Social links
+[[params.social]]
+name = "GitHub"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/lptr/"
+
+[[params.social]]
+name = "Mastodon"
+icon = "fa-brands fa-mastodon fa-2x"
+weight = 2
+url = "https://mas.to/@lptr"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa-brands fa-linkedin fa-2x"
+weight = 3
+url = "https://www.linkedin.com/in/lorantpinter/"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

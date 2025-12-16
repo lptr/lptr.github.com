@@ -1,0 +1,17 @@
+// Override theme variables before importing
+$link-color-dark: rgb(206, 145, 120);
+
+// Import theme dark mode styles
+@import "variables";
+
+$font-family: 'Lora', 'Georgia', serif;
+
+@import "base_dark";
+@import "content_dark";
+@import "notices_dark";
+@import "navigation_dark";
+@import "tabs_dark";
+@import "taxonomies_dark";
+@import "footer_dark";
+@import "float_dark";
+@import "syntax_dark";
