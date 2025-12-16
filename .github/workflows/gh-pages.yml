@@ -23,7 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: hugomods/hugo:debian-dart-sass-node-git-non-root
+      image: hugomods/hugo:ci
     env:
       TZ: Europe/Budapest
 
