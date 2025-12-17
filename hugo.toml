@@ -37,6 +37,10 @@ icon = "fa-brands fa-linkedin fa-2x"
 weight = 3
 url = "https://www.linkedin.com/in/lorantpinter/"
 
+[params.umami]
+  siteID = "b6c0fdbc-a1b5-4581-bdd5-ed239d653585"
+  scriptURL = "https://analytics.cornucopia-machines.eu/script.js"
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
