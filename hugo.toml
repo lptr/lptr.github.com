@@ -53,6 +53,10 @@ type = "application/rss+xml"
 siteID = "b6c0fdbc-a1b5-4581-bdd5-ed239d653585"
 scriptURL = "https://analytics.cornucopia-machines.eu/script.js"
 
+[services]
+[services.disqus]
+shortname = "redneck-overengineering"
+
 [caches]
 [caches.images]
 dir = ':cacheDir/images'
