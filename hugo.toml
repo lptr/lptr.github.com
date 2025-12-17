@@ -18,6 +18,10 @@ name = "Blog"
 weight = 1
 url = "/blog/"
 
+[outputs]
+home = ["html"]
+blog = ["html", "rss"]
+
 # Social links
 [[params.social]]
 name = "GitHub"
@@ -37,10 +41,18 @@ icon = "fa-brands fa-linkedin fa-2x"
 weight = 3
 url = "https://www.linkedin.com/in/lorantpinter/"
 
+[[params.social]]
+name = "RSS"
+icon = "fa-solid fa-rss fa-2x"
+weight = 4
+url = "https://lptr.github.io/blog/index.xml"
+rel = "alternate"
+type = "application/rss+xml"
+
 [params.umami]
-  siteID = "b6c0fdbc-a1b5-4581-bdd5-ed239d653585"
-  scriptURL = "https://analytics.cornucopia-machines.eu/script.js"
+siteID = "b6c0fdbc-a1b5-4581-bdd5-ed239d653585"
+scriptURL = "https://analytics.cornucopia-machines.eu/script.js"
 
 [caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[caches.images]
+dir = ':cacheDir/images'
