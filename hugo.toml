@@ -4,6 +4,7 @@ title = 'Redneck Overengineering'
 theme = 'hugo-coder'
 
 [params]
+since = 2021
 author = 'Lóránt Pintér'
 description = 'Taking farm automation to extreme levels'
 colorScheme = "auto"
@@ -11,6 +12,7 @@ hidecolorschemetoggle = false
 customSCSS = ["scss/custom.scss"]
 commit = "https://github.com/lptr/lptr.github.io/tree/"
 contactEmail = "lorant@pindoro.eu"
+gravatar = 'lorant@pindoro.eu'
 
 # Menu
 [[menu.main]]
