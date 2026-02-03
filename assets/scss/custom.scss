@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Lora';
+  font-family: "Lora";
   font-style: normal;
-  src: url('../fonts/Lora-VariableFont_wght.ttf');
+  src: url("../fonts/Lora-VariableFont_wght.ttf");
 }
 
 @font-face {
-  font-family: 'Lora';
+  font-family: "Lora";
   font-style: italic;
-  src: url('../fonts/Lora-Italic-VariableFont_wght.ttf');
+  src: url("../fonts/Lora-Italic-VariableFont_wght.ttf");
 }
 
 .navigation-item {
@@ -18,6 +18,39 @@ a {
   transition: none;
 }
 
-.navigation a:hover {
-  text-decoration: none;
+.navigation {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.content {
+  .post {
+    .post-content {
+      p {
+        text-align: left;
+        hyphens: none;
+      }
+
+      figure > img {
+        border-radius: 1rem;
+        box-shadow: 0 0.6rem 1.25rem rgba(0, 0, 0, 0.25);
+      }
+
+      figure > figcaption > p {
+        text-align: center;
+      }
+
+      table {
+        margin: 0 auto;
+        tr {
+          th,
+          td {
+            border-left: 0 !important;
+            border-right: 0 !important;
+          }
+        }
+      }
+    }
+  }
 }
